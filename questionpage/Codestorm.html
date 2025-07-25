@@ -105,57 +105,23 @@ Q. Your task is to devise an efficient algorithm to compute the number of such u
    Q4 You are working as a software engineer on a real-time monitoring system for a smart city infrastructure project.
       One component of the system is responsible for tracking temperature fluctuations recorded by sensors deployed across various locations. 
    These sensors continuously send temperature readings as an array of integers. Due to resource constraints, you can only process the data in chunks — using a sliding window of fixed size k.
-   Problem:
      As part of the system’s analytics, you need to continuously calculate the highest temperature reading in the last k time units as new data arrives.
      This is critical for real-time alerts (e.g., overheating in an area), so the solution must be efficient even for large datasets.
   
           Your Task:
-You are given:
-An array nums representing the sequence of temperature readings over time.
+          You are given:
+          An array nums representing the sequence of temperature readings over time.
+          An integer k representing the window size (e.g., how many recent readings to analyze at a time).
+          Write a function that returns an array of the maximum temperature for each sliding window of size k.
+          Each time the window moves one position to the right, compute and store the maximum of the current window.</div>
+        <div class="question" data-index="4">
+    Q5   A decoration consists of n bulbs connected by n - 1 wires, forming a tree structure.
+          Each bulb has an initial color. The beauty of the decoration is defined as the number of wires that connect two bulbs of the same color.
+          You are given the initial colors of the bulbs and how each bulb (from the second to the nth) is connected to one of the previously added bulbs.
+          There are m repaint operations.
+          Each operation changes the color of one bulb. After each repaint, you need to calculate and print the updated beauty of the decoration.
 
-An integer k representing the window size (e.g., how many recent readings to analyze at a time).
-
-Write a function that returns an array of the maximum temperature for each sliding window of size k.
-
-Each time the window moves one position to the right, compute and store the maximum of the current window.</div>
-        <div class="question" data-index="4">Q5
-Recently, the first model of decoration was assembled from multi-colored glowing light bulbs at the holiday jewelry factory. The prototype of the decoration was assembled as follows:
-
-First, two light bulbs were taken and connected with a wire.
-Then, a light bulb was taken for 
- times and it was connected with a wire to one of the previously added to the garland light bulbs.
-The result was a decoration of 
- colored light bulbs. The factory has 
- bulbs of different colors. When the prototype was ready, it was handed over to the Beauty Department. In this department, it was decided to consider the beauty of jewelry the number of pairs of light bulbs of the same color, connected by a wire.
-Employees of the Beauty Department 
- repaint some of the light bulbs in one of the 
- colors for some reason known only to them. All they need to produce the perfect jewelry is to quickly determine the beauty of the product, after repainting the next light bulb.
-The staff of the beauty department asks you, the best programmer, to write a program that will determine the beauty of jewelry according to the given prototype of jewelry and the sequence of repainting light bulbs.
-
-Input format
-
-The first line contains three integers 
-, 
-, 
- denoting the number of bulbs in the product prototype, the number of repaints, and the number of different colors of bulbs available at the factory.
-The second line contains 
- positive integers 
- denoting the colors of the bulbs in the order of addition to the product.
-The third line contains 
- positive integers 
- denoting the number of the light bulb to which the 
- light bulb was connected.
-The next 
- lines contain two integers 
- and 
- denoting the number of the repainted lamp and the color in which it is repainted, respectively. The numbers in the lines are separated by single spaces.
-Output format
-
-Print 
- lines. The 
- line should contain a single integer denoting the number of pairs of light bulbs of the same color, connected by a wire, after execution and repainting.
-
-Constraints</div>
+</div>
       </div>
       <button class="nav-button prev-button" disabled>
         <svg width="60px" height="60px" viewBox="0 0 60 60" class="border">
