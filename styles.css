@@ -183,9 +183,10 @@ img[alt="Recoil"] {
 }
 
     @font-face {
-      font-family: 'Akira Expanded';
-      src: url('C:/Users/rkrat/OneDrive/Desktop/gallery/akira.otf') format('truetype');
-    }
+  font-family: 'Akira Expanded';
+  src: url('./fonts/font.otf') format('opentype');
+}
+
 
 button {
   display: flex;
@@ -309,5 +310,6 @@ button {
   opacity: 0;
   transform: translateY(50px); /* start 50px lower */
 }
+
 
 
